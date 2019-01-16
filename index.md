@@ -32,10 +32,10 @@ CREATE projects/calc/src/lib/calc.service.ts
 ```
 5. Now you can write your code in service or component file.
 projects > calc >  src > lib > calc.component.ts
+
 ```
 eg : calc.component.ts
 import { Component, OnInit } from '@angular/core';
-
 @Component({
   selector: 'lib-calc',
   template: `
@@ -56,8 +56,8 @@ export class CalcComponent implements OnInit {
     return a*b;
   }
 }
-
 ```
+
 6. You have to import the class of library serivce or component in your project.
  - app.module.ts
 ```
