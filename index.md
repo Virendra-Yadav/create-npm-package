@@ -57,9 +57,8 @@ export class CalcComponent implements OnInit {
   }
 }
 ```
-
 6. You have to import the class of library serivce or component in your project.
- - app.module.ts
+app.module.ts
 ```
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -83,7 +82,7 @@ import { CalcComponent } from 'projects/calc/src/public_api';
 })
 export class AppModule { }
 ```
-- home.component.ts
+home.component.ts
 ```
 import { Component, OnInit } from '@angular/core';
 import { CalcComponent } from 'projects/calc/src/public_api';
