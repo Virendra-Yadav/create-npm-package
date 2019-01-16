@@ -31,7 +31,7 @@ CREATE projects/calc/src/lib/calc.service.spec.ts
 CREATE projects/calc/src/lib/calc.service.ts
 ```
 5. Now you can write your code in service or component file.
-projects > calc >  src > lib > calc.component.ts
+projects > calc >  src > lib >
 
 ```
 eg : calc.component.ts
