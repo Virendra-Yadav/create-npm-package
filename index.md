@@ -107,9 +107,16 @@ export class HomeComponent implements OnInit {
 ```
 7) When you are ready with your package, create build of package.
 ```
-ng build LIBRARY_NAME --prod
+ng build LIBRARY_NAME
 ```
-8) It will give you dist/LIBRARY_PROJECT folder.
+8) It will give you dist/LIBRARY_PROJECT folder, when you build a library it will modify the tsconfig.json as
+```
+"paths": {
+      "COMPONENT_CLASS": [
+        "dist/LIBRARY_NAME"
+      ]
+    }
+```
 9) You have to change the dist/LIBRARY_PROJECT/package.json as
 ```
 {
@@ -132,6 +139,22 @@ ng build LIBRARY_NAME --prod
 10) Now you have to just publish it on your npm account.<br>
 Enter this command on dist/LIBRARY_NAME terminal
 ```
+npm publish
+```
+
+### Some important commands use in npm package for angular.
+- Create component in library
+```
+ng generate component COMPONENT_NAME --project=PROJECT_NAME
+```
+- Library build
+```
+ng build PROJECT_NAME
+```
+- Publish your component
+```
+ng build LIBRAARY_NAME --prod
+cd dist/LIBRAARY_NAME
 npm publish
 ```
 
