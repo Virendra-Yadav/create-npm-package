@@ -151,7 +151,7 @@ ng generate component COMPONENT_NAME --project=PROJECT_NAME
 ```
 ng build PROJECT_NAME
 ```
-- Publish your component
+- Publish your package
 ```
 ng build LIBRAARY_NAME --prod
 cd dist/LIBRAARY_NAME
