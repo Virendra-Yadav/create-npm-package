@@ -7,22 +7,22 @@ You have to create an account on npm official website.<br>
 Click [here](https://www.npmjs.com/signup) to create account.
 
 ## Steps for create an npm package
-1. You can login by enter command in terminal
+1) You can login by enter command in terminal
 ```
 npm login
 ```
 It will ask your npm credentials, you have to enter them.
-## Create angular project
-2. You have to create an angular project
+
+2) Create angular project
 ```
 ng new PROJECT_NAME --routing --style="scss"
 ```
-3. Now you have to create the library i.e. your npm package for angular
+3) Now you have to create the library i.e. your npm package for angular
 ```
 ng g library LIBRARY_NAME
 eg : ng g library calc
 ```
-4. It will give you these files
+4) It will give you these files
 ```
 CREATE projects/calc/src/lib/calc.module.ts
 CREATE projects/calc/src/lib/calc.component.spec.ts
@@ -30,8 +30,8 @@ CREATE projects/calc/src/lib/calc.component.ts
 CREATE projects/calc/src/lib/calc.service.spec.ts
 CREATE projects/calc/src/lib/calc.service.ts
 ```
-5. Now you can write your code in service or component file.
-projects > calc >  src > lib >
+5) Now you can write your code in service or component file.
+projects > calc >  src > lib
 
 ```
 eg : calc.component.ts
@@ -57,7 +57,7 @@ export class CalcComponent implements OnInit {
   }
 }
 ```
-6. You have to import the class of library serivce or component in your project.
+6) You have to import the class of library serivce or component in your project.
 app.module.ts
 ```
 import { BrowserModule } from '@angular/platform-browser';
@@ -105,12 +105,12 @@ export class HomeComponent implements OnInit {
 }
 
 ```
-7. When you are ready with your package, create build of package.
+7) When you are ready with your package, create build of package.
 ```
 ng build LIBRARY_NAME --prod
 ```
-8. It will give you dist/LIBRARY_PROJECT folder.
-9. You have to change the dist/LIBRARY_PROJECT/package.json as
+8) It will give you dist/LIBRARY_PROJECT folder.
+9) You have to change the dist/LIBRARY_PROJECT/package.json as
 ```
 {
   "name": "NAME_OF_YOUR_PROJECT",
@@ -129,7 +129,7 @@ ng build LIBRARY_NAME --prod
   }
 }
 ```
-10. Now you have to just publish it on your npm account.<br>
+10) Now you have to just publish it on your npm account.<br>
 Enter this command on dist/LIBRARY_NAME terminal
 ```
 npm publish
