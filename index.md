@@ -1,13 +1,13 @@
 # Create NPM package
-This project will guide you how to create an npm package.<br>
-You have to just follow these steps for develop your first npm package.<br>
+This project will guide you on how to create an NPM package.<br>
+You have to just follow these steps to develop your first npm package.<br>
 
 ## Sign up on npm
 You have to create an account on npm official website.<br>
 Click [here](https://www.npmjs.com/signup) to create account.
 
-## Steps for create an npm package
-1) You can login by enter command in terminal
+## Steps to create an npm package
+1) You can log in by entering the command in terminal
 ```
 npm login
 ```
@@ -20,7 +20,7 @@ ng new PROJECT_NAME --routing --style="scss"
 3) Now you have to create the library i.e. your npm package for angular
 ```
 ng g library LIBRARY_NAME
-eg : ng g library calc
+eg: ng g library calc
 ```
 4) It will give you these files
 ```
@@ -30,7 +30,7 @@ CREATE projects/calc/src/lib/calc.component.ts
 CREATE projects/calc/src/lib/calc.service.spec.ts
 CREATE projects/calc/src/lib/calc.service.ts
 ```
-5) Now you can write your code in service or component file.
+5) Now you can write your code in the service or component file.
 projects > calc >  src > lib
 
 ```
@@ -105,7 +105,7 @@ export class HomeComponent implements OnInit {
 }
 
 ```
-7) When you are ready with your package, create build of package.
+7) When you are ready with your package, create a build of the package.
 ```
 ng build LIBRARY_NAME
 ```
@@ -142,8 +142,8 @@ Enter this command on dist/LIBRARY_NAME terminal
 npm publish
 ```
 
-### Some important commands use in npm package for angular.
-- Create component in library
+### Some important commands used in npm package for angular.
+- Create a component in the library
 ```
 ng generate component COMPONENT_NAME --project=PROJECT_NAME
 ```
